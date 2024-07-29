@@ -1,0 +1,175 @@
+.container-fluid {
+  background-color: #000000;
+ 
+}
+
+
+
+
+html {
+  scroll-behavior: smooth;
+ background-color: black
+}
+
+
+
+.design {
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.design-section {
+
+}
+
+
+.timeline {
+width: 80%;
+height: auto;
+max-width: 800px;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+margin-right: 1000px;
+
+}
+.timeline-content {
+position: relative; /* Make the element relative to position the pseudo-element */
+padding: 20px;
+background: #1f1f1f;
+-webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+        box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+border-radius: 5px;
+color: white;
+padding: 1.75rem;
+
+overflow-wrap: break-word !important;
+margin: 1rem;
+margin-bottom: 20px;
+border-radius: 6px;
+
+
+}
+
+.timeline-component {
+border: 2px solid white;
+
+}
+
+.timeline-content::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-image: linear-gradient(45deg, #266880, #1C4E7B, #091970);
+border-radius: 6px;
+opacity: 0;
+transition: opacity 0.4s ease;
+z-index: 1; /* Ensure the pseudo-element is behind the content */
+
+}
+
+.timeline-content:hover::before {
+opacity: 1;
+}
+
+.timeline-content h3, .timeline-content p {
+position: relative;
+z-index: 2; /* Ensure the content is above the pseudo-element */
+}
+
+.additional-content {
+display: none; /* Hide additional content by default */
+position: relative;
+z-index: 2;
+margin-top: 20px;
+}
+
+.timeline-content img {
+max-width: 100%; /* Ensure images are responsive */
+height: auto;
+border-radius: 6px;
+
+
+}
+
+.timeline-content {
+overflow: hidden; /* Ensure content stays within the div */
+transition: transform 2s ease; /* Slow transition for size increase */
+}
+
+.timeline-content:hover {
+transform: scale(1.1); /* Increase size on hover */
+}
+
+.timeline-content:hover .additional-content {
+display: block; /* Reveal additional content on hover */
+}
+
+
+
+
+.timeline-component {
+margin: 0px 20px 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+.timeline {
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+}
+.timeline-middle {
+  position: relative;
+  background-image: linear-gradient(90deg,  #7caae6 19%, #14A9DB 100%);
+  width: 3px;
+  height: 100%;
+}
+.main-middle {
+  opacity: 0;
+}
+.timeline-circle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  box-shadow: 2px;
+  background-image: linear-gradient(90deg, #7caae6 19%, #14A9DB 100%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+}
+
+
+
+
+.intro-div {
+  height: 40vh;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.head1 {
+  background-color: grey;
+  color: white;
+  font-size: 60px;
+ text-align: center;
+position:relative;
+top: 50px;
+padding: 20px;
+
+
+
+
+
+
+
+
+}
