@@ -36,7 +36,7 @@ margin-right: 1000px;
 
 }
 .timeline-content {
-position: relative; /* Make the element relative to position the pseudo-element */
+position: relative; 
 padding: 20px;
 background: #1f1f1f;
 -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
@@ -69,7 +69,7 @@ background-image: linear-gradient(45deg, #266880, #1C4E7B, #091970);
 border-radius: 6px;
 opacity: 0;
 transition: opacity 0.4s ease;
-z-index: 1; /* Ensure the pseudo-element is behind the content */
+z-index: 1; 
 
 }
 
@@ -79,18 +79,18 @@ opacity: 1;
 
 .timeline-content h3, .timeline-content p {
 position: relative;
-z-index: 2; /* Ensure the content is above the pseudo-element */
+z-index: 2; 
 }
 
 .additional-content {
-display: none; /* Hide additional content by default */
+display: none; 
 position: relative;
 z-index: 2;
 margin-top: 20px;
 }
 
 .timeline-content img {
-max-width: 100%; /* Ensure images are responsive */
+max-width: 100%; 
 height: auto;
 border-radius: 6px;
 
@@ -98,16 +98,16 @@ border-radius: 6px;
 }
 
 .timeline-content {
-overflow: hidden; /* Ensure content stays within the div */
-transition: transform 2s ease; /* Slow transition for size increase */
+overflow: hidden; 
+transition: transform 2s ease; 
 }
 
 .timeline-content:hover {
-transform: scale(1.1); /* Increase size on hover */
+transform: scale(1.1); 
 }
 
 .timeline-content:hover .additional-content {
-display: block; /* Reveal additional content on hover */
+display: block; 
 }
 
 
